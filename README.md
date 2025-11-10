@@ -10,7 +10,33 @@ $ zig version
 0.16.0-dev.1262+be4eaed7c
 ```
 
-## Hello world demo
+## Hello world simple demo
+- Make folder `hello_world_simple/src`
+- Create source file `src/main.zig`
+
+***main.zig***
+```zig
+const std = @import("std");
+
+pub fn main() !void {
+    var stdout_buffer: [1024]u8 = undefined;
+    var stdout_writer = std.fs.File.stdout().writer(&stdout_buffer);
+    const stdout = &stdout_writer.interface;
+    try stdout.print("Hello, {s}!\n", .{"world"});
+    try stdout.flush();
+}
+```
+```bash
+$ cd hello_world_simple
+$ zig build-exec
+```
+- Run binary executable `main`
+```bash
+$ ./main
+```
+
+
+## Hello world full demo
 - Use `zig init` to generate a hello_world demo
 ```bash
 $ mkdir hello_world && cd hello_world
