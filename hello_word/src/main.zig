@@ -2,7 +2,6 @@ const std = @import("std");
 const hello_word = @import("hello_word");
 
 pub fn main() !void {
-    // Prints to stderr, ignoring potential errors.
     std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
     try hello_word.bufferedPrint();
 }
@@ -19,7 +18,6 @@ test "fuzz example" {
     const Context = struct {
         fn testOne(context: @This(), input: []const u8) anyerror!void {
             _ = context;
-            // Try passing `--fuzz` to `zig build test` and see if it manages to fail this test case!
             try std.testing.expect(!std.mem.eql(u8, "canyoufindme", input));
         }
     };
