@@ -5,9 +5,11 @@ My repository for learning the **Zig programming language** using various resour
 - [Introduction to Zig by Pedro Duarte Faria](https://github.com/pedropark99/zig-book)
 
 ## Zig version used
+
+- [zig-x86_64-linux-0.15.2.tar.xz](https://ziglang.org/download/0.15.2/zig-x86_64-linux-0.15.2.tar.xz)
 ```bash
 $ zig version
-0.16.0-dev.1262+be4eaed7c
+0.15.2
 ```
 
 ## Hello world simple demo
