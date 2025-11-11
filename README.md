@@ -2,7 +2,7 @@
 
 My repository for learning the **Zig programming language** using various resources listed below:
 
-- [Introduction to Zig by Pedro Duarte Faria](https://github.com/pedropark99/zig-book)
+- [Introduction to Zig by Pedro Duarte Faria](https://pedropark99.github.io/zig-book/)
 
 ## Zig version used
 
@@ -28,9 +28,14 @@ pub fn main() !void {
     try stdout.flush();
 }
 ```
+- Check syntax using `zig fmt`. No output == no problem.
 ```bash
 $ cd hello_world_simple
-$ zig build-exec
+$ zig fmt src/main.zig
+```
+- Build binary executable with **debug symbols** by default
+```bash
+$ zig build-exe src/main.zig
 ```
 - Run binary executable `main`
 ```bash
