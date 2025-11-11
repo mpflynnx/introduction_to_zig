@@ -4,6 +4,23 @@ My repository for learning the **Zig programming language** using various resour
 
 - [Introduction to Zig by Pedro Duarte Faria](https://pedropark99.github.io/zig-book/)
 
+## Zig install with Visual Studio Code extension
+Keeps the language server in sync with the installed Zig version.
+- In Visual Studio Code, add extension named [Zig Language by zigland](https://marketplace.visualstudio.com/items?itemName=ziglang.vscode-zig)
+- Zig will automatically be downloaded to:
+
+```bash
+~/.config/Code/User/globalStorage/ziglang.vscode-zig/zig/x86_64-linux-0.15.2/zig
+```
+- To use this version of Zig in any terminal emulator
+- Create a symbolic link in ~/zig
+- Update shell configs for Zig path
+```bash
+$ cd ~
+$ mkdir ~/zig
+$ ln -s ~/.config/Code/User/globalStorage/ziglang.vscode-zig/zig/x86_64-linux-0.15.2/zig ~/zig/zig
+```
+
 ## Zig version used
 
 - [zig-x86_64-linux-0.15.2.tar.xz](https://ziglang.org/download/0.15.2/zig-x86_64-linux-0.15.2.tar.xz)
