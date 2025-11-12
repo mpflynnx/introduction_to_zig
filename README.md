@@ -80,3 +80,11 @@ $ ./zig-out/bin/hello_word
 All your codebase are belong to us.
 Run `zig build test` to run the tests. 
 ```
+
+### Compiling C source file using Zig
+
+Compile C source files using [zic cc](https://zig.guide/working-with-c/zig-cc/) a drop in replacement for Clang compiler.
+
+```bash
+$ zig cc main.c -o my_executable
+```
