@@ -88,3 +88,14 @@ Compile C source files using [zic cc](https://zig.guide/working-with-c/zig-cc/) 
 ```bash
 $ zig cc main.c -o my_executable
 ```
+
+### Ziglings exercises
+
+Learn Zip using exercises.
+
+Refer to document [Zigling installation instructions](ziglings_instructions.md)
+
+## External references
+- [20 questions based on the "Introducing Zig" chapter](https://gemini.google.com/share/d911f2273f11)
+- [Zig Fundamentals: Chapter 1 Study Guide](https://gemini.google.com/share/195c2651fa06)
+- [Zigling coding exercises](https://codeberg.org/ziglings/exercises)
