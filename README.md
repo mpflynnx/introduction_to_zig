@@ -3,6 +3,7 @@
 My repository for learning the **Zig programming language** using various resources listed below:
 
 - [Introduction to Zig by Pedro Duarte Faria](https://pedropark99.github.io/zig-book/)
+- [Ziglings](https://codeberg.org/ziglings/exercises)
 
 ## Zig install with Visual Studio Code extension
 Keeps the language server in sync with the installed Zig version.
@@ -91,7 +92,7 @@ $ zig cc main.c -o my_executable
 
 ### Ziglings exercises
 
-Learn Zip using exercises.
+Learn Zig using exercises.
 
 Refer to document [Zigling installation instructions](ziglings_instructions.md)
 
